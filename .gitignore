@@ -1,0 +1,9 @@
+# This workspace contains unrelated projects and generated artifacts.
+# Publish only the open-source skill package and its repository metadata.
+*
+
+!.gitignore
+!README.md
+!LICENSE
+!realistic-hk-wuxia/
+!realistic-hk-wuxia/**

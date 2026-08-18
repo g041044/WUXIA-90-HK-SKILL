@@ -1,0 +1,8 @@
+interface:
+  display_name: "香港新武侠实拍"
+  short_description: "动态灯光、真人妆造、剧情表演与高速武打视频的港式新武侠提示词"
+  brand_color: "#314A5E"
+  default_prompt: "使用 $realistic-hk-wuxia，把我的人物与剧情转换为具备动态灯光、真人妆造、演员表演和专业武打调度的香港新武侠图像、视频或分镜提示词。"
+
+policy:
+  allow_implicit_invocation: true
