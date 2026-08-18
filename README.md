@@ -1,6 +1,18 @@
-# Realistic HK Wuxia
+# WUXIA 90 香港 SKILL
 
-`realistic-hk-wuxia` 是一个面向 Codex 的香港新武侠提示词 Skill。它把人物、剧情、参考图、参考视频或分镜需求，转换为具有 1990 年代至 21 世纪初香港新武侠实拍质感的图像、分镜与视频提示词。
+`wuxia-90-hk` 是一个面向 Codex 的香港新武侠提示词 Skill。它把人物、剧情、参考图、参考视频或分镜需求，转换为具有 1990 年代至 21 世纪初香港新武侠实拍质感的图像、分镜与视频提示词。
+
+## 作品展示
+
+以下 20 张图片由本 Skill 设计的提示词生成，用于展示其在人物特写、奇异妆造、雪夜叙事与高速武打方面的效果。
+
+| | | | |
+|---|---|---|---|
+| ![青绿古城夜景](showcase/01-ancient-city-night.jpg) | ![湖岸晨光外景](showcase/02-lakeside-dawn.jpg) | ![水榭人物分镜](showcase/03-waterside-storyboard.jpg) | ![月夜离别分镜](showcase/04-moonlit-farewell.jpg) |
+| ![月下双人戏](showcase/05-moonlit-duet.jpg) | ![冷暖水宫近景](showcase/06-water-palace-closeup.jpg) | ![雨夜奇情人物](showcase/07-rainy-night-character.jpg) | ![金色内力交锋](showcase/08-golden-qi-battle.jpg) |
+| ![树妖追击分镜](showcase/09-vine-attack-storyboard.jpg) | ![暖调群像分镜](showcase/10-warm-crowd-storyboard.jpg) | ![市井动作分镜](showcase/11-market-action-storyboard.jpg) | ![雪夜对峙分镜](showcase/12-snow-night-confrontation.jpg) |
+| ![雪夜冲突分镜](showcase/13-snow-night-conflict.jpg) | ![黑衣侠客设定](showcase/14-dark-swordsman-sheet.jpg) | ![银冠白衣造型](showcase/15-silver-crown-costume.jpg) | ![清冷女侠设定](showcase/16-female-warrior-sheet.jpg) |
+| ![异域武者设定](showcase/17-northern-warrior-sheet.jpg) | ![墨色侠客设定](showcase/18-black-robed-hero.jpg) | ![白衣公子设定](showcase/19-white-robed-hero.jpg) | ![蓝金公子设定](showcase/20-blue-gold-hero.jpg) |
 
 ## 项目解决什么问题
 
@@ -64,32 +76,32 @@
 
 ### 方法一：安装 Release 压缩包
 
-1. 下载最新的 `realistic-hk-wuxia-*.zip`。
-2. 解压后确认最外层目录名为 `realistic-hk-wuxia`，其中直接包含 `SKILL.md`、`agents/` 和 `references/`。
+1. 下载最新的 `wuxia-90-hk-*.zip`。
+2. 解压后确认最外层目录名为 `wuxia-90-hk`，其中直接包含 `SKILL.md`、`agents/` 和 `references/`。
 3. 将整个目录复制到 Codex 的技能目录。
 
 Windows 默认安装位置：
 
 ```text
-C:\Users\<你的用户名>\.codex\skills\realistic-hk-wuxia
+C:\Users\<你的用户名>\.codex\skills\wuxia-90-hk
 ```
 
 macOS / Linux 默认安装位置：
 
 ```text
-~/.codex/skills/realistic-hk-wuxia
+~/.codex/skills/wuxia-90-hk
 ```
 
 Windows PowerShell 示例：
 
 ```powershell
-Expand-Archive -LiteralPath .\realistic-hk-wuxia-latest.zip -DestinationPath .\skill-package
-Copy-Item -LiteralPath .\skill-package\realistic-hk-wuxia -Destination "$env:USERPROFILE\.codex\skills" -Recurse
+Expand-Archive -LiteralPath .\wuxia-90-hk-latest.zip -DestinationPath .\skill-package
+Copy-Item -LiteralPath .\skill-package\wuxia-90-hk -Destination "$env:USERPROFILE\.codex\skills" -Recurse
 ```
 
 ### 方法二：从源码安装
 
-克隆仓库后，将仓库中的 `realistic-hk-wuxia` 技能目录完整复制到 Codex 技能目录，不要只复制 `SKILL.md`。
+克隆仓库后，将仓库中的 `wuxia-90-hk` 技能目录完整复制到 Codex 技能目录，不要只复制 `SKILL.md`。
 
 安装完成后重新打开 Codex，或新建一个任务，让技能列表重新载入。
 
@@ -98,7 +110,7 @@ Copy-Item -LiteralPath .\skill-package\realistic-hk-wuxia -Destination "$env:USE
 在 Codex 对话中显式调用技能：
 
 ```text
-$realistic-hk-wuxia 你的需求
+$wuxia-90-hk 你的需求
 ```
 
 一个有效输入通常包含以下信息中的若干项：
@@ -116,13 +128,13 @@ $realistic-hk-wuxia 你的需求
 简短需求也可以使用，缺失信息会依据剧情合理补齐。例如：
 
 ```text
-$realistic-hk-wuxia 楚留香与水母阴姬在水宫对峙，4宫格分镜，16:9，港片暖润高光。
+$wuxia-90-hk 楚留香与水母阴姬在水宫对峙，4宫格分镜，16:9，港片暖润高光。
 ```
 
 涉及参考图时，上传图片并明确职责：
 
 ```text
-$realistic-hk-wuxia 图1锁定杨过，图2锁定小龙女，图3只参考火场影调。生成20秒双人合击金轮法王的视频提示词，最后二人负伤，适配可灵。
+$wuxia-90-hk 图1锁定杨过，图2锁定小龙女，图3只参考火场影调。生成20秒双人合击金轮法王的视频提示词，最后二人负伤，适配可灵。
 ```
 
 ## 输入输出示例
@@ -132,7 +144,7 @@ $realistic-hk-wuxia 图1锁定杨过，图2锁定小龙女，图3只参考火场
 **输入**
 
 ```text
-$realistic-hk-wuxia 雪夜风陵渡口，郭襄看到杨过摘下面具后看呆了，背后是神雕。4宫格分镜，16:9，克制真人实拍。
+$wuxia-90-hk 雪夜风陵渡口，郭襄看到杨过摘下面具后看呆了，背后是神雕。4宫格分镜，16:9，克制真人实拍。
 ```
 
 **输出节选**
@@ -155,7 +167,7 @@ $realistic-hk-wuxia 雪夜风陵渡口，郭襄看到杨过摘下面具后看呆
 **输入**
 
 ```text
-$realistic-hk-wuxia 小龙女与杨过双人合击金轮法王，20秒真人武打视频。残破佛殿火场，最后二人被金轮法王震伤，少量台词，21:9，适配可灵。
+$wuxia-90-hk 小龙女与杨过双人合击金轮法王，20秒真人武打视频。残破佛殿火场，最后二人被金轮法王震伤，少量台词，21:9，适配可灵。
 ```
 
 **输出节选**
@@ -174,7 +186,7 @@ $realistic-hk-wuxia 小龙女与杨过双人合击金轮法王，20秒真人武�
 ## 技能包结构
 
 ```text
-realistic-hk-wuxia/
+wuxia-90-hk/
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml

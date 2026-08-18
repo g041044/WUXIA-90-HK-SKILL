@@ -5,5 +5,7 @@
 !.gitignore
 !README.md
 !LICENSE
-!realistic-hk-wuxia/
-!realistic-hk-wuxia/**
+!wuxia-90-hk/
+!wuxia-90-hk/**
+!showcase/
+!showcase/**
